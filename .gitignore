@@ -1,32 +1,30 @@
-# Prerequisites
-*.d
+# CMake-specific ignores:
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Operating System specific ignores:
+.DS_Store
 
-# Precompiled Headers
-*.gch
-*.pch
+# Buildtool folders:
+.cache/
+build/
 
-# Compiled Dynamic libraries
+# Libraries:
 *.so
+*.a
 *.dylib
+*.lib
 *.dll
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Executables:
+xmake.exe
+xmake
